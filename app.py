@@ -162,7 +162,7 @@ def add_category():
     return render_template("add_category.html")
 
 
-@app.route("/edit_categoty/<category_id>", methods=["GET", "POST"])
+@app.route("/edit_category/<category_id>", methods=["GET", "POST"])
 def edit_category(category_id):
     if request.method == "POST":
         submit = {
